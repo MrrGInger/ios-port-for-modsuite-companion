@@ -10,7 +10,20 @@
     scripts:
       - name: Install Flutter dependencies
         script: flutter pub get
+
+      - name: Analyze Flutter code
+        script: flutter analyze
+
+      - name: Run Flutter tests
+        script: |
+          if [ -d test ] && find test -name '*_test.dart' | grep -q .; then
+            flutter test
+          else
+            echo "No Flutter tests found yet; skipping."
+          fi
+
       - name: Build iOS without code signing
         script: flutter build ios --debug --no-codesign
+
     artifacts:
       - build/ios/iphoneos/Runner.app
