@@ -1,0 +1,53 @@
+.dart_tool/
+.flutter-plugins-dependencies
+build/
+.gradle/
+.idea/
+*.iml
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+.env
+.env.*
+**/key.properties
+**/local.properties
+**/GoogleService-Info.plist
+**/google-services.json
+*.backup
+*.before-ios
+
+# Local backups
+lib-backup-*/
+android_backup_*/
+*.bak
+*.bak4
+*.backup
+*.backup-*
+*.branding-backup
+*.dashboard-backup-*
+*.before-ios
+
+# Windows installer outputs
+installer_output/
+*.exe
+
+# Local scripts
+Install-ModSuite-Dashboard.ps1
+
+# Sensitive files
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.mobileprovision
+*.jks
+*.keystore
+**/key.properties
+**/local.properties
+
+# Build outputs
+build/
+.dart_tool/
+.gradle/
