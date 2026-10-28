@@ -23,7 +23,8 @@
           fi
 
       - name: Build iOS without code signing
-        script: flutter build ios --debug --no-codesign
+        script: flutter build ios --simulator --debug
 
     artifacts:
-      - build/ios/iphoneos/Runner.app
+      - build/ios/iphonesimulator/Runner.app/**
+
